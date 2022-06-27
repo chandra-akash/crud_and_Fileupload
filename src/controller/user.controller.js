@@ -16,7 +16,7 @@ router.post("/", async (req, res) => {
 // Read the data in the database
 router.get("/", async (req, res) => {
     const users = await User.find().lean().exec();
-    console.log("anup pandey");
+    console.log("akash chandra");
     return res.status(200).json({ users })
 });
 
