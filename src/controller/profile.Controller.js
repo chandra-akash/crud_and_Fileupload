@@ -42,7 +42,7 @@ const imageUpload = multer({
 router.post('/', imageUpload.single('image'), (req, res) => {
     res.send(req.file)
 }, (error, req, res, next) => {
-    console.log("hi i am an error");
+    console.log("An Error Occurred: NOT FOUND");
     res.status(400).send({ error: error.message })
 })
 
